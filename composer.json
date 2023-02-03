@@ -6,5 +6,6 @@
             "name": "Sławomir Oruba"
         }
     ],
-    "require": {}
+    "require": {},
+    "minimum-stability": "dev"
 }
