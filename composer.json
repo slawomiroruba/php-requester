@@ -1,0 +1,10 @@
+{
+    "name": "soruba/php-requester",
+    "description": "PHP class that provides methods to perform http request: GET, POST, PUT, DELETE",
+    "authors": [
+        {
+            "name": "Sławomir Oruba"
+        }
+    ],
+    "require": {}
+}
