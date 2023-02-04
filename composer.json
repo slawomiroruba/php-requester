@@ -6,6 +6,8 @@
             "name": "Sławomir Oruba"
         }
     ],
+    "type": "library", 
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "SOruba\\": "src"
