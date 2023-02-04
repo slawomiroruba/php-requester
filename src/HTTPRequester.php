@@ -1,5 +1,5 @@
 <?php 
-
+namespace SOruba;
 class HTTPRequester {
     /**
      * @description Make HTTP-GET call
