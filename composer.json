@@ -5,5 +5,10 @@
         {
             "name": "Sławomir Oruba"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "SOruba\\": "src"
+        }
+    }
 }
