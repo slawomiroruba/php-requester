@@ -22,7 +22,7 @@ class HTTPRequester {
      * @param       array $params
      * @return      HTTP-Response body or an empty string if the request fails or is empty
      */
-    public static function HTTPPost(string $url, array $params = [], array $headers = [], array $post_data = []) {
+    public static function HTTPPost(string $url, array $params = [], array $headers = [], $post_data = []) {
         $final_url = $params ? $url.'?'. http_build_query($params) : $url;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $final_url);
@@ -30,7 +30,7 @@ class HTTPRequester {
         curl_setopt($ch, CURLINFO_HEADER_OUT, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_data));
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
         $response = json_decode(curl_exec($ch),true);
         curl_close($ch);
         return $response;
